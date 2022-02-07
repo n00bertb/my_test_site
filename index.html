@@ -12,5 +12,11 @@ accurateTrackBounce:true
 <noscript><div><img src="https://mc.yandex.ru/watch/87233423" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!— /Yandex.Metrika counter —>
 
-<h1>Hellow Widget!</h1>
-<iframe width="100%" height="900px" src="https://direct.yandex.ru/wizard/widget/?partnerId=1234"></iframe>
+<div id="my-container" style="height:900px"></div>
+<script src="https://yastatic.net/s3/direct-frontend/uac-widget/partner-script.js"></script>
+<script>
+window.YaMasterWidget.init({
+container: document.querySelector('#my-container'),
+partnerId: '1234'
+});
+</script>
