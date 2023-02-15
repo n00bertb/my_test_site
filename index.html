@@ -1,48 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-        }
+<h1>TEST</h1>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-        .over {
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0,0,0,0.3);
-        }
+   ym(87233423, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/87233423" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
-        iframe {
-            display: block;
-            width: 442px;
-            height: 256px;
-            border-radius: 16px;
-        }
-    </style>
-</head>
-<body>
-    <div class="over">
 
-            <iframe 
-            sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-forms allow-popups"
-            src="https://test.direct.yandex.ru/wizard/widget/payment-redirect/" 
-            id="iframe1"
-            frameborder="0"
-            scrolling="no"
-        ></iframe>
-    </div>
-   
-    <script>
-        window.addEventListener('message', (e) => {
-            console.log(e.data)
-        })
-    </script>
-</body>
-</html>
+<!-- <div id="my-container" style="height:900px; width:1000px"></div> -->
+<div id="my-container" style="height:900px; width:"></div>
+<script src="https://yastatic.net/s3/direct-frontend/uac-widget/partner-script.js"></script>
+<script>
+window.YaMasterWidget.init({
+container: document.querySelector('#my-container'),
+partnerId: ''
+});
+</script>
